@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-image: url('image/background.jpg'); /* 请替换为你的图片路径 */
+        background-size: cover; /* 背景图片覆盖整个页面 */
+        background-position: center; /* 背景图片居中 */
+        background-repeat: no-repeat; /* 不重复背景图片 */
+      }
+      .content-page {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-indent: 2em;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-indent: 2em;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-indent: 2em;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-indent: 2em;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  display: flex; /* Use Flexbox to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 400px; /* Set a fixed height for the container or use a percentage */
+  margin-bottom: 1rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- 顶部栏 -->
+    <div class="top-bar fixed w-full z-10 bg-purple-900 text-white">
+      <div class="flex items-center justify-between h-16 px-4">
+        <img src="image/bs.png" alt="Logo" class="max-h-full">
+<!-- 导航菜单 -->
+<nav class="hidden md:block">
+  <ul class="flex space-x-4">
+    <li class="relative group text-lg font-semibold text-gray-100">
+      本系概况
+      <!-- 二级菜单 -->
+      <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 text-purple-900 w-48" style="left: 0;">
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">本系简介</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">师资队伍</a>
+      </div>
+    </li>
+    <li class="relative group text-lg font-semibold text-gray-100">
+      学生园地
+      <!-- 二级菜单 -->
+      <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 text-purple-900 w-48" style="left: 0;">
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">最新通知</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">就业实习</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">学生活动</a>
+      </div>
+    </li>
+    <li class="relative group text-lg font-semibold text-gray-100">
+      本科生培养
+      <!-- 二级菜单 -->
+      <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 text-purple-900 w-48" style="left: 0;">
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">专业简介</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">课程设置</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">成就成果</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">培养方案</a>
+      </div>
+    </li>
+    <li class="relative group text-lg font-semibold text-gray-100">
+      研究生培养
+      <!-- 二级菜单 -->
+      <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 text-purple-900 w-48" style="left: 0;">
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">专业简介</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">课程设置</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">招生信息</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">培养方案</a>
+      </div>
+    </li>
+    <li class="relative group text-lg font-semibold text-gray-100">
+      学术研究
+      <!-- 二级菜单 -->
+      <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 text-purple-900 w-48" style="left: 50%; transform: translateX(-50%);">
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">学术成果</a>
+        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200 ">招贤纳士</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+<div class="container mx-auto mt-4 p-4 flex flex-col lg:flex-row bg-cover bg-center" style="background-image: url('image/黄色背景.jpg');">
+  <div class="w-full lg:w-1/4 bg-zinc-100 p-4 hidden lg:block">
+    <nav class="space-y-2">
+      <a href="#" class="block px-4 py-2 bg-purple-600 text-white rounded font-bold" style="font-size: 20px;">最新通知</a>
+      <a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded font-bold" style="font-size: 20px;">就业实习</a>
+      <a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded font-bold" style="font-size: 20px;">学生活动</a>
+    </nav>
+  </div>
+ <!--内容页-->
+<div class="content-page">
+  <article class="container">
+    <h2 class="title">学生园地 > 最新通知</h2>
+    <h3 class="subtitle font-bold" style="color: #57068C;">新华网：第二届“汉语桥”故事会华东预赛举行</h3>
+    <p class="date">2024-04-17 17:16</p>
+    <p class="text">4月13日，第二届“汉语桥”全球外国人汉语大会——故事会华东预赛在杭州电子科技大学举办。华东预赛区覆盖浙江、上海、江苏等地，来自41个国家的162位选手报名参赛。杭州电子科技大学副校长李文钧，中文联盟主席、世界汉语教学学会智慧教育分会理事长王锦红等嘉宾出席活动。</p>
+    <p class="text">故事会预赛现场，各国选手用流利的中文讲述着他们的中文学习之旅，有的分享了自己在中文学习中的困惑与突破，有的讲述了通过学习中文深入了解中国文化的经历。他们的故事或感人至深，或风趣幽默，或扣人心弦，或振奋人心，现场评委和观众掌声不断。</p>
+    <p class="text">除了精彩绝伦的故事分享，许多选手还带来了才艺表演，川剧变脸、京剧、琵琶、绕口令、太极拳、扇子舞、汉服、剪纸、书法、篆刻、声乐……可谓八仙过海，各显神通。</p>
+    <div class="image-container">
+      <img src="image/hyq2.jpg" height="auto" width="600px" alt="Certificate" class="image">
+    </div>
+    <p class="text font-bold" style="text-align: center;">外国人穿汉服好看吗？</p>
+    <p class="text">身着水粉汉服的摩洛哥选手荣希玛一登场就引发赞叹。她盘着中式发髻，手持团扇，一颦一笑皆是风采。身着水粉汉服的摩洛哥选手荣希玛一登场就引发赞叹。她盘着中式发髻，手持团扇，一颦一笑皆是风采。</p>
+    <p class="text">“汉服让我触摸到了中国历史的厚度。中国人的喜爱和赞美让我感受到了他们是多么友好和热情。”荣希玛表示来中国前就已经被汉服文化深深吸引。来中国后，她拍摄了一组汉服照片和视频发到了短视频平台，受到了很多网友的点赞。课余时间，她常常身穿汉服漫步西湖边，感受中华五千年文明的深厚底蕴。
+      此外，她自学了中国古典舞，并将自己的舞蹈视频发布在网上，让更多人认识到汉服雅韵。</p>
+      <div class="image-container">
+        <img src="image/hyq3.jpg" height="auto" width="600px" alt="Certificate" class="image">
+      </div>
+      <p class="text font-bold" style="text-align: center;">“中国的发展真是太快了”</p>
+      <p class="text">孟加拉国的方舟从中国高铁优质服务的小事讲起，声情并茂地讲述了自己来中国求学后亲眼看到的中国建设发展成就。提到中国人民的奋斗史，他感慨道，中国人民是英雄的人民。</p>
+      <p class="text">经过一天的激烈角逐，来自孟加拉国的方舟、印度尼西亚的许斐雅、摩洛哥的荣希玛斩获复赛直通卡，将前往张家界参加本届“汉语桥”故事会复赛。</p>
+      <div class="image-container">
+        <img src="image/hyq1.jpg" height="auto" width="600px" alt="Certificate" class="image">
+      </div>
+      <p class="text font-bold" style="text-align: center;">故事为媒，讲述与中国的不解之缘</p>
+      <p class="text">本次“汉语桥”故事会华东预赛由教育部中外语言交流合作中心主办，中文联盟和杭州电子科技大学承办。中国高等教育学会外国留学生教育管理分会副理事长程爱民、上海外国语大学国际文化交流学院院长张艳莉、哈尔滨工业大学原国际教育学院院长顾建政担任评委。</p>
+  
+  </article>
+</div>
+<style>
+  .group:hover .group-hover\:block {
+    display: block;
+  }
+</style>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMUNICATION</title>
+    <style>
+      .text-purple-900 {
+  color: #57068C; /* 这是一个示例颜色值 */
+}
+      .relative2 {
+    position: relative;
+    overflow: hidden; /* Ensure the image does not overflow its container */
+  }
+
+
+  .animate-image {
+    width: 1200px;
+    height: 1000px;
+    object-fit: cover;
+    transform: scale(1.2); /* 初始状态放大 */
+    transition: transform 5s ease-in-out;
+  }
+      /* 设置背景图片 */
+  .bg-zinc-100 {
+    background-image: url('image/end.png'  ); /* 请替换为您的图片路径 */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* 其他样式保持不变 */
+  .p-4 { padding: 1rem; }
+  .border-t-4 { border-top-width: 4px; }
+  .border-blue-500 { border-color: #3b82f6; }
+  .flex { display: flex; }
+  .justify-between { justify-content: space-between; }
+  .items-center { align-items: center; }
+  .text-purple-700 { color: #7c3aed; }
+  .font-bold { font-weight: bold; }
+  .space-x-4 > * { margin-right: 1rem; }
+  .mt-2 { margin-top: 0.5rem; }
+  .rounded-full { border-radius: 9999px; }
+      .new-purple-background {
+    background-color: #763977;
+  }
+      .purple2-bar {
+            width: 100%; 
+            height: 10px; 
+            background-color:#E6C390; 
+        }
+        
+       @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+      .purple-bar {
+            width: 100%; 
+            height: 10px; 
+            background-color:#57068C; 
+        }
+       @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in2 {
+  opacity: 0; /* 初始状态为透明 */
+  animation: fade-in 3s forwards; /* 动画名称为fade-in，持续时间2秒， forwards保持动画完成时的样式 */
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+        /* 应用动画到具有fade-in类的图片上 */
+        .fade-in {
+            opacity: 0; /* 初始状态为透明 */
+            animation: fade-in 4s forwards; /* 动画名称为fade-in，持续时间3秒， forwards保持动画完成时的样式 */
+        }
+        .rounded-image {
+    border-radius: 10px; /* 设置圆角为10px */
+    transition: transform 0.3s ease; 
+  }
+
+  .rounded-image:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大图片 */
+  }
+         .container {
+          display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .bottom-image {
+    object-fit: cover;
+  }
+
+  .top-image1 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .top-image2 {
+    position: absolute;
+    bottom: 0px;; 
+    left: 50%; 
+    transform: translate(-50%,0); 
+    width: 480px; 
+    height: 300px; 
+    
+  }
+
+    .top-bar { 
+        background-color: #57068C; 
+    position: fixed;top: 0;z-index: 100;
+ ; height: 65px; 
+    color: white;
+    text-align: left;padding: 10px; position: relative;margin: 0ch;
+    }
+    .top-bar img {
+         width: 330px; height: auto;
+    display: block; position: relative;top: 50%;transform: translateY(-50%);}
+    table{width: 100%;}
+    table,td{border: 1px solid; border-collapse: collapse;}
+           tr{line-height: 100px;}
+ 
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+ </style>
+ <style type="text/css">
+  #one{
+    font-family: "方正粗黑简宋";
+  }
+  #two{
+    font-family: "微软雅黑";
+  }
+  
+</style>
+</head>
+<body>
+  
+    <!-- 顶部栏 -->
+    <div class="top-bar"><img src="image/bs.png" >
+    </div>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body>
+        <div class="relative">
+      <div class="absolute inset-0 z-10">
+        <img src="ICON/zz 2.png"  width="70px" height="70px" class="top-image2 fade-in" id="topImage">
+        <!--首页大图r-->
+      </div>
+      <div class="relative2"><img src="image/yy.png" alt="Background Image" width="1200px"  class="top-image1">
+        <img src="image/dnl.jpg" alt="Background Image" width="1200px"  class="bottom-image  w-full h-full object-cover animate-image image-container animate-image relative2"></div>
+      
+      
+    </div>
+    <nav class="absolute inset-x-0 top-20 z-20 text-white bg-transparent">
+      <ul class="flex justify-end space-x-12 p-6"> 
+        <li class="relative group">
+          <a href="#" class="font-bold" id="one" style="font-size: 22px;">本系概况</a>
+          <ul class=" absolute left-0 w-48 bg-white text-black rounded-lg shadow hidden group-hover:block p-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg  font-bold text-purple-900" style="font-size: 18px;">本系简介</a></li> 
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg  font-bold text-purple-900" style="font-size: 18px;">师资队伍</a></li> 
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="font-bold" style="font-size: 22px;">学生园地</a>
+          <ul class="absolute left-0 w-48 bg-white text-black rounded-lg shadow hidden group-hover:block p-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">最新通知</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">就业实习</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">学生活动</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="font-bold" style="font-size: 22px;">本科生培养</a>
+          <ul class="absolute left-0 w-48 bg-white text-black rounded-lg shadow hidden group-hover:block p-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">专业简介</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">课程设置</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">成就成果</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">培养方案</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="font-bold" style="font-size: 22px;">研究生培养</a>
+          <ul class="absolute left-0 w-48 bg-white text-black rounded-lg shadow hidden group-hover:block z-index: 2; p-2 ">
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">专业简介</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">课程设置</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">招生信息</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">培养方案</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="font-bold" style="font-size: 22px;">学术研究</a>
+          <ul class="absolute left-0 w-48 bg-white text-black rounded-lg shadow-lg hidden group-hover:block p-2" style="left: 50%; transform: translateX(-50%);">
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">学术成果</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-zinc-200 rounded-lg font-bold text-purple-900" style="font-size: 18px;">招贤纳士</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="purple-bar"></div>
+    <!--第二部分-->
+    <div class="text-center mt-8">
+      
+    </div>
+    <script>
+      document.getElementById('topImage').addEventListener('click', function() {
+        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+      });
+    </script>
+    
+      </body>
+    </html>
+      </body>
+    </html>
+   
+                  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="col-span-2">
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center box">
+        <img src="ICON/news.gif"  width="70px" height="70px"     alt="icon" class="mr-2">
+        <h2 class="text-xl font-bold text-blue-600">新闻动态</h2>
+      </div>
+      <div class="flex items-center">
+        <div class="border-t-2 border-dashed border-zinc-400 w-64 mr-2"></div>
+        <a href="#" class="text-zinc-600">查看更多</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <img src="image/byrj.png" width="600px" height="400px"  alt="Graduation" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105">
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+        <p>新媒体传播系的毕业日记</p>
+        <h3 class="text-lg font-bold">我们毕业啦！新媒体传播2024届毕业日记</h3>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div class="relative group">
+        <img src="image/sjs.jpg" alt="Event 1" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105 ">
+        <div class="absolute top-0 left-0 bg-orange-500 text-white p-2">
+          <p class="text-xs" style="font-weight: bold;">26</p>
+          <p class="text-xs" style="font-weight: bold;">2024.4</p>
+        </div>
+        <p class="mt-2 text-sm">人文艺术与数字媒体学院、法学院举办“设计/设计师的进化”主题讲座暨杰出校友特约导师聘任仪式</p>
+      </div>
+      <div class="relative group">
+        <img src="image/cf.jpg" alt="Event 2" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute top-0 left-0 bg-green-500 text-white p-2">
+          <p class="text-xs" style="font-weight: bold;">26</p>
+          <p class="text-xs" style="font-weight: bold;">2024.4</p>
+        </div>
+        <p class="mt-2 text-sm" id="one">“相约杭电，展望未来” 杭州电子科技大学2024年校园招聘会人文艺术类专场交流采访</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="md:ml-24">
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center">
+        <img src="ICON/pigeon.gif"  width="70px" height="70px"  alt="icon" class="mr-2">
+        <h2 class="text-xl font-bold text-purple-600">通知公告</h2>
+      </div>
+      <div class="flex items-center">
+        <div class="border-t-2 border-dashed border-zinc-400 w-20  mr-2"></div>
+        <a href="#" class="text-zinc-600">查看更多</a>
+      </div>
+    </div>
+    <!--这里是左侧栏-->
+    <div class="space-y-4">
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">讲座</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">2024传播学高分上岸学姐考研分享会</p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">讲座</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+          传期军：“镜头朝下”一个田野派摄影师的影像创作
+        </p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">公示</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+          2024年杭电新闻与传播专业调剂考生复试名单
+        </p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">公示</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+          人文艺术与数字媒体学院 法学院（2022-2023学年）考研奖学金评定结果公示
+        </p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">通知</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">2024年第16届全国大学生广告艺术大赛</p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">通知</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">第二届“汉语桥”全球外国人汉语大会——故事会华东预赛在杭州电子科技大学举办。</p>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg shadow">
+        <h3 class="text-lg font-bold dark:text-zinc-300">美正育人</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">“国内传播学专业发展与建设——传播学专业建设研讨”研讨会举办。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      
+    </div>
+    <!--第三部分-->
+    <div class="purple2-bar"></div>
+    <div class="bg--500 new-purple-background text-white p-6">
+      <div class="text-center mb-6">
+        <div class="inline-block text-purple-800 py-2 px-4 rounded">
+          <img src="image/cbyx.png" alt="icon" class="inline-block ml-2" />
+          <img src="ICON/fdy.png" alt="icon" class="inline-block ml-2" />
+          <br>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+        <div>
+          <img src="image/1.png" alt="circle" class="mx-auto mb-2"  />
+         
+        </div>
+        <div>
+          <img src="image/2.png" alt="circle" class="mx-auto mb-2" />
+         
+        </div>
+        <div>
+          <img src="image/3.png" alt="circle" class="mx-auto mb-2" />
+          
+        </div>
+        <div>
+          <img src="image/4.png" alt="circle" class="mx-auto mb-2" />
+        
+        </div>
+        <div>
+          <img src="image/12.png" alt="circle" class="mx-auto mb-2"  />
+          
+        </div>
+      </div>
+      <div class="flex justify-between mt-6">
+        <button class=" text-purple-500 rounded-full p-2">
+          <img src="ICON/left.png"  width="70px"  alt="left arrow" />
+        </button>
+        <button class=" text-purple-500 rounded-full p-2">
+          <img src="ICON/right.png" width="70px" alt="right arrow" />
+        </button>
+      </div>
+      <div class="mt-6">
+        <img src="image/wave.png" alt="waves" class="w-full" id="waveImage" />
+      </div>
+    </div>
+    <script>
+      // 监听滚动事件
+      window.addEventListener('scroll', function() {
+        // 获取图片元素的位置
+        var waveImage = document.getElementById('waveImage');
+        var imagePosition = waveImage.getBoundingClientRect();
+        // 判断图片是否进入视口
+        if (imagePosition.top < window.innerHeight) {
+          // 如果进入视口，则添加渐显动画
+          waveImage.classList.add('fade-in2');
+        } else {
+          // 否则移除渐显动画
+          waveImage.classList.remove('fade-in2');
+        }
+      });
+    </script>
+    <!--尾页-->
+    <div class="purple2-bar"></div>
+    <div class="bg-zinc-100 p-4 border-t-4 flex justify-between items-center">
+      <div>
+        <h2 class="text-purple-700 font-bold" style="font-weight: bold; color: #531DAB;">HDU | COMMUNICATION</h2>
+        <p class="text-purple-700" style="font-weight: bold; color: #531DAB;">关注我们</p>
+        <div class="flex space-x-4 mt-2">
+          <img src="image/cb.jpg" alt="Logo" class="w-12 h-12" />
+          <img src="image/erweima.png" alt="QR Code" class="w-12 h-12" />
+        </div>
+      </div>
+      <button  id="scrollToTopButton">
+        <img src="ICON/black.png" width="70px" alt="Arrow Up" />
+      </button>
+    </div>
+    
+    <script>
+      // 当点击按钮时，滚动到页面顶部
+      document.getElementById('scrollToTopButton').addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+    <script>
+      window.onload = function() {
+        var image = document.querySelector('.animate-image');
+        image.style.transform = 'scale(1)';
+      };
+    </script>
+  </body>
+</html>
+
+       
+</body>
+</html>
